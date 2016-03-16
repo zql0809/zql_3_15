@@ -1,0 +1,47 @@
+package com.zql.lianxi;
+
+public class T2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Pet myPet  = new Pet("dog");
+		Dog myDog = new Dog("Spot");
+//		System.out.println(myPet.toString()+"\n"+"speak:"+
+//		myPet.speak()+"\n"+myPet.move()+" "+myPet.getName()+"\n");
+		System.out.println(myDog.toString()+"\n"+"speak:"+
+				myDog.speak()+"\n"+myDog.move()+" "+myDog.getName()+"\n");
+	}
+
+}
+
+abstract class Pet{
+	protected String name;
+	public Pet(String name){
+		this.name = name;
+	}
+	public String getName(){
+		return name;
+	}
+	abstract public String move();
+	abstract public String speak();
+	public String toString(){
+		return "MyPet:"+name;
+	}
+	
+}
+class Dog extends Pet{
+	protected int weight;
+	public Dog(String name){
+		super(name);
+	}
+	public String move(){
+		return "miaomiao";
+	}
+	public String speak(){
+		return "woof";
+	}
+}
+
+
+
+

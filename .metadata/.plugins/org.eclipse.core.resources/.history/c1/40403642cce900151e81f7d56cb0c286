@@ -1,0 +1,21 @@
+package com.xinhuaxueyuan.Test_java;
+
+public class T3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		perSon s1 = new perSon();
+	}
+
+}
+class A1{
+	public A1(){
+		System.err.println("right");
+	}
+}
+
+class perSon extends A1{
+//	public perSon(){
+//		System.err.println("wrong");
+//	}
+}

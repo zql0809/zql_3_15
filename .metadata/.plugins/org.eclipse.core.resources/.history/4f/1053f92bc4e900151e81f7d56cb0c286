@@ -1,0 +1,27 @@
+package com.xinhuaxueyuan.Test_java;
+
+public class T2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		student s1= new student();
+		s1.show();
+	}
+
+}
+class people{
+	int a = 1;
+	public people(){}
+	void show()
+	{
+		System.out.println(a);
+	}
+}
+
+class student extends people{
+	public student(){}
+	void show(){
+		super.show();
+		System.out.println("你知道吗你很傻比！！");
+	}
+}

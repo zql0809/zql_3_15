@@ -1,0 +1,29 @@
+
+public class Test03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Student s1 = new Student();
+		 s1.name = "aba";
+		 s1.age = 24;
+		 s1.sex = 'Ů';
+		 s1.value = "110";
+		 s1.show();
+	}
+
+}
+
+class Student{
+	String value;
+	String name;
+	int sex;
+	int age;
+	void show()
+	{
+		System.out.println("name: "+name);
+		System.out.println("value: "+value);
+		System.out.println("sex: "+(char)sex);
+		System.out.println("age: "+age);
+		
+	}
+}

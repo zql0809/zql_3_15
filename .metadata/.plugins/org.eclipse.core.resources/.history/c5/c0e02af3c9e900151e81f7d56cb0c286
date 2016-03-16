@@ -1,0 +1,19 @@
+package com.xinhuaxueyuan.Test_java;
+
+public class T3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		person s1 = new person();
+	}
+
+}
+class A1{
+	
+}
+
+class person extends A1{
+	public person(){
+		System.err.println("wrong");
+	}
+}

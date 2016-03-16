@@ -1,0 +1,39 @@
+package com.xinhuaxueyuan.Test_java;
+
+public class T1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		student s1 = new student(5,'男',"101",75.6f);
+		s1.show();
+	}
+
+}
+
+abstract class person{
+	public int age;
+	public char sex;
+	public person(int a,char key){
+		this.age = a;
+		this.sex = key;
+	}
+	
+	void show(){
+		System.out.println("年龄是"+age);
+		System.out.println("年龄是"+sex);
+	}
+}
+
+class student extends person{
+	String a;
+	float gride;
+	public student(int k ,char key,String b,float g){
+		super(k,key);
+		a = b;
+		gride = g;
+	}
+	void show(){
+		super.show();
+	}	
+	
+}

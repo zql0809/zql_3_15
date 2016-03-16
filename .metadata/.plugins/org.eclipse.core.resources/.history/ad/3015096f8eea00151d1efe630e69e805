@@ -1,0 +1,36 @@
+package com.zql.lianxi;
+import java.util.*;
+
+public class T5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("请输入想得知的某一个月兔子的个数：");
+		Scanner input = new Scanner(System.in);
+		int a = input.nextInt();
+	
+		int i = 1;
+		int j = 1;
+		int total;
+		
+		if(a == 1)
+		{
+			System.out.println("第一个月兔子的对数是："+1);
+		}else if(a == 2){
+			System.out.println("第一个月兔子的对数是："+1);
+		}else if(a<=0)
+		{
+			System.out.println("输入有误请重新输入！！");
+		}else {
+			total = i+j;
+			--a;
+			if(a>=2){
+			i=j;
+			j=total;
+			total = i + j;
+			}
+			System.out.println(total);
+		}
+	}
+
+}

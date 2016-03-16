@@ -1,0 +1,77 @@
+package com.jike.zql.lianxi;
+
+public class T1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Retce r1 = new Retce(14.6f,17.6f);
+		r1.area();
+		r1.perimeter();
+		Circle c1 = new Circle(23.3f);
+		c1.area();
+		c1.perimeter();
+		Tri t1 = new Tri(12.5f,2.5f,6.0f);
+		t1.area();
+		t1.perimeter();
+	}
+
+}
+interface Shape1{
+	final float pi = 3.1415f;
+	public void area();
+//	public void perimeter();
+}
+
+interface Shape extends Shape1{
+	public void perimeter();
+}
+
+class Retce implements Shape{
+	float l;
+	float h;
+	public Retce(float l,float h){
+		this.l = l;
+		this.h = h;
+	}
+	public void area(){
+		System.out.println("矩形的面积是:"+l*h);
+	}
+	public void perimeter(){
+		System.out.println("矩形的周长是:"+2*(l+h));
+	}
+}
+class Circle implements Shape{
+	float r;
+
+	public Circle(float r){
+		this.r = r;
+	}
+	public void area(){
+		System.out.println("矩形的面积是:"+2*r*r*pi);
+	}
+	public void perimeter(){
+		System.out.println("矩形的周长是:"+2*pi*r);
+	}
+}
+class Tri implements Shape{
+	float l;
+	float h;
+	float n;
+	double s;
+	public Tri(float l,float h,float n){
+		this.l = l;
+		this.h = h;
+		this.n = n;
+	}
+	public void area(){
+		s =(l+h+n)*1/2;
+		System.out.println("矩形的面积是:"+Math.sqrt(s*(s-l)*(s-h)*(s-n)));
+	}
+	public void perimeter(){
+		System.out.println("矩形的周长是:"+(l+h+n));
+	}
+}
+
+
+
+

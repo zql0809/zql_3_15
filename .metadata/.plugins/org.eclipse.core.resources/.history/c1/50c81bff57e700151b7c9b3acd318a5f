@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+
+public class Test01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("请输入你的数据：");
+		int a=sc.nextInt();
+		System.out.println(a);
+		
+	}
+
+}

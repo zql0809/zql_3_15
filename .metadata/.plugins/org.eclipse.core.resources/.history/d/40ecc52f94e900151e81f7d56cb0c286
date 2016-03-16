@@ -1,0 +1,51 @@
+
+public class Test03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Student s1 = new Student();
+		 s1.name = "aba";
+		 s1.age = 24;
+		 s1.sex = 'Å®';
+		 s1.value = "110";
+		 s1.show();
+		 
+		 
+		 Sb sb1 = new Sb(27,"ÅÖ×Ó",'ÄÐ',1.83f);
+		 sb1.show();
+		 
+	}
+
+}
+
+class Student{
+	String value;
+	String name;
+	int sex;
+	int age;
+	void show()
+	{
+		System.out.println("name: "+name);
+		System.out.println("value: "+value);
+		System.out.println("sex: "+(char)sex);
+		System.out.println("age: "+age);
+		
+	}
+}
+class Sb{
+    int age;
+	private String Name;
+	int sex;
+	float high;
+	Sb(int age_1,String s_name,char s_sex,float h_hight)
+	{
+		age = age_1;
+		Name = s_name;
+		sex = s_sex;
+		high = h_hight;
+	}
+	void show()
+	{
+		System.out.println("age:"+age+"/n"+"Name:"+Name+"sex"+sex+"high"+high);
+	}
+}

@@ -1,0 +1,49 @@
+package com.zql.lianxi;
+
+import java.util.Scanner;
+
+public class T4_4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student stu1 = new Student();
+		stu1.set("zql");
+		stu1.set();
+		stu1.ave();
+	}
+
+}
+class Student{
+	private String name;
+	private char sex;
+	private int age;
+	private int g=0;
+	private float num;
+	void set(String name){
+		this.name = name;
+	}
+	void set(char sex,String name){
+		this.sex = sex;
+		this.name = name;
+	}
+	void set(char sex,String name,int age){
+		this.sex = sex;
+		this.name = name;
+		this.age = age;
+	}
+	void set(){
+		System.out.println(" ‰»Î≥…º®£∫");
+		Scanner input = new Scanner(System.in);
+		float a = input.nextFloat();
+		g++;
+		float b = input.nextFloat();
+		g++;
+		float c = input.nextFloat();
+		++g;
+		num = a+b+c;
+	}
+	void ave(){
+		num = num/g;
+		System.out.println(num);
+	}
+}

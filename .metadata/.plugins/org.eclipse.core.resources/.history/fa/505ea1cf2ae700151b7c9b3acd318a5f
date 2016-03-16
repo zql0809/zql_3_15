@@ -1,0 +1,18 @@
+package com.xinhua.lianxi;
+import java.util.*;
+
+public class Test3_11 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+//		int a = input.nextInt();
+//		int b = input.nextInt();
+		String c = input.nextLine();
+		char c1 = c.charAt(0);
+		
+		int trans = (int)c1;
+		System.out.println(trans);
+		
+	}
+
+}

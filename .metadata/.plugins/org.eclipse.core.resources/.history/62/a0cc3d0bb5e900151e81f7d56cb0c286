@@ -1,0 +1,20 @@
+package com.xinhuaxueyuan.Dog_java;
+
+import java.util.Scanner;
+
+public class Test04 {
+	float a;
+	float b;
+	void set(){
+		System.out.println("输入两个数求其运算结果");
+		Scanner input = new Scanner(System.in);
+		a = input.nextFloat(); 
+		b = input.nextFloat(); 
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+}
+
+

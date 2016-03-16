@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class Test02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i=1;
+		int k=6;
+		System.out.println("please input the number about the size of the triangle:");
+		Scanner input =new Scanner(System.in);
+		int a=input.nextInt();
+		for (int j = 0; j < a; j++) {
+			for (int j2 = 0; j2 < k-j-1; j2++) {
+				System.out.print("*");
+			}
+		   System.out.println("\n");
+		}
+	}
+
+}

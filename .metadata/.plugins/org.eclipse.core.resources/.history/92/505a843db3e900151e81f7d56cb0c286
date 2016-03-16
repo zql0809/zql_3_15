@@ -1,0 +1,30 @@
+package com.xinhuaxueyuan.Dog_java;
+
+import java.util.Scanner;
+
+public class Test03 {
+//计算两个数的运算a*根号B
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+
+class Fn{
+	float A;
+	float B;
+	void set()
+	{
+		System.out.println("input two number:");
+		Scanner input = new Scanner(System.in);
+		float a = input.nextFloat();
+		float b = input.nextFloat();
+		A = a;
+		B = b;
+	}
+	
+	void Fun(){
+		
+	}
+}

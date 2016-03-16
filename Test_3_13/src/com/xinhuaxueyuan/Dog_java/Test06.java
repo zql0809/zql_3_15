@@ -1,0 +1,47 @@
+package com.xinhuaxueyuan.Dog_java;
+
+public class Test06 {
+//	private int a; 
+//	public Test06(int a) {
+//		// TODO Auto-generated constructor stub
+//		a = a;
+//	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		student s1 =new student();
+		s1.set('ÄÐ', "zql");
+		s1.show();
+		s1.set(90, "101");
+		s1.show();
+		
+		
+		 }
+}
+
+class person{
+     char sex;
+	 String a;
+	 void set(char s1,String s2)
+	 {
+		 sex = s1;
+		 a = s2;
+	 }
+}
+
+class student extends person{
+	int gride;
+	String classmate;
+	void set(int a,String b )
+	{
+		gride = a;
+		classmate = b;
+	}
+	
+	void show()
+	{
+		System.out.println("  ****"+sex);
+		System.out.println("  ****"+a);
+		System.out.println("  ****"+gride);
+		System.out.println("  ****"+classmate);
+	}
+}

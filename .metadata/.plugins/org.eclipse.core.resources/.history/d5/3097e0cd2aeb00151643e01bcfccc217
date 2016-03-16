@@ -1,0 +1,28 @@
+package com.jike.zql.lianxi;
+
+public class T4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+ class SB{
+	 int age;
+	 String haircolor;
+	 String wight;
+	 double slary;
+	 
+	 public SB(int a,String c,String w,double s){
+		 age = a;
+		 haircolor = c;
+		 wight = w;
+		 slary = s;
+	 }
+	 
+	 public void speaktowife(){
+		 System.out.println("你在干什么，听不听话，劳资那么辛苦挣钱养你，你还不听");
+		 System.out.println("你算老几嘛，你个死胖子，傻逼的不行，有种求出斐波那契数列，第i个的数值呢？");
+	 }
+ }

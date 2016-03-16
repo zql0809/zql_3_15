@@ -1,0 +1,15 @@
+
+public class Test04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=9;
+		for (int i = 1; i <a+1; i++) {
+			for (int j = i; j <a+1; j++) {
+				System.out.print(i+"*"+j+"="+i*j+" ");
+			}
+			System.out.println("\n");
+		}
+	}
+
+}

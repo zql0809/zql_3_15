@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+
+public class Test04 {
+
+
+
+	public void qiuji() {
+		// TODO Auto-generated method stub
+		System.out.println(" 输入：");
+		Scanner input=new Scanner(System.in);
+		int a=input.nextInt();
+		int k=1;
+		long total=1;
+		total=k*total;
+		k++;
+		if(k<a){
+			qiuji();
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Test04 test=new Test04();
+		test.qiuji();
+		System.out.println("计算结果："+test.total);
+
+	}
+
+}

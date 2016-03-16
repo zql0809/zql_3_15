@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+
+public class Test01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        System.out.println("请输入等腰三角形的高：");
+        Scanner input = new Scanner(System.in);
+        int row = input.nextInt();
+        
+        for (int i = 0; i < row; i++) {
+			for (int j = 0; j <= i-1; j++) {
+				System.out.print(" ");
+			}
+			for (int k = 0; k <= row-i+1; k++) {
+				System.out.print("*");
+			}
+			System.out.println("");
+		}
+        
+	}
+
+}
